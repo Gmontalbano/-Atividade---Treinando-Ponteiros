@@ -1,0 +1,7 @@
+No exercicio 4 podemos observar um código simples
+linha 4 - ciração da váriavel "x", ponteiro "p" e double pointer "pp"
+ambos inteiros
+linha 6 - podemos ver que "p" está fazendo referencia a "x"
+linha 7 - "pp" como é double pointer ele aponta duas vezes, ou seja ela aponta para "p" 
+que está apontando para "x"
+o resultado desse código é 100, pois "pp" aponta para "p" que aponta para "x" que tem armazenado 100
