@@ -1,19 +1,24 @@
 #include <stdio.h>
-char copiar(char vet[]){
-  char copia[20]={};
-  for (int i=0;i<20;i++){
-    copia[i]=vet[i];    
+#define size 20
+
+void copiar(char vet[], char copia[]){
+  int i = 0;
+  while (i < size){
+    *copia = *vet;
+    i++;
+    vet++;
+    copia++;
   }
-  for(int i = 0; i < 20; i++) {
-  printf("%c",copia[i]);
-    }
-  return 'a';
 }
 int main(void) {
-  char vet[20]={};
+  char vet[size]={};
+  char copia[size]={};
   printf("Digite a palavra: ");
   scanf("%s",vet);
-  copiar(vet);
+  copiar(vet, copia);
+  for(int i = 0; i < size; i++) {
+  printf("%c",copia[i]);
+    }
 
   return 0;
-}   
+}
